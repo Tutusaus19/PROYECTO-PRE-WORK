@@ -1,10 +1,8 @@
 /**MIS ESTILOS CV 
-
 Azul: #4bb1e4
 Verde: #2ebdbc
 Gris: #5d6e7f
 Rosa: #e0629a
-
 **/
 
 /* ---- particles.js container ---- */
@@ -43,6 +41,7 @@ img
     width: 95%;
 }
 
+
 /* ESTILOS VIDEOLLAMADAS (1) */
 
 .containerHeader
@@ -65,7 +64,6 @@ img
 }
 .item h1
 {
-
     font-weight: lighter;
     line-height: 4rem;
     font-size: 2.6rem;
@@ -111,21 +109,25 @@ nav .contenedor
     display: flex;
     justify-content: space-between;
 }
-.contenedor .containertitulos
+.contenedor .container_menu
 {
     display: inherit;
     align-items: center;
 }
-.containertitulos h2
+.container_menu h2
 {
     font-size: 2rem;
     color:#FFF;
+}
+.container_menu img{
+    width: 200px;
+
 }
 .menu
 {
     margin-left: 4rem;
 }
-.containerLinks a
+.menu a
 {
     margin-right: 2.5rem;
     color:#FFF;
@@ -133,14 +135,16 @@ nav .contenedor
     text-transform: capitalize;
     text-decoration: none;
 }
+.menu a:hover{
+    text-decoration: underline;
+}
 
 .boton{
     display: inherit;
     align-items: center;
 }
 
-.containerR button 
-{
+button{
     width: 10rem;
     height: 3rem;
     border-radius: 50px;
@@ -148,14 +152,232 @@ nav .contenedor
     border: 2px solid #FFF;
     font-size: 1.2rem;
     color:#FFF;
+}
+button a{
+    text-transform: capitalize;
+    text-decoration: none;
     outline: none;
     cursor: pointer;
+    color: #fff;
+}
+.ola{
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+
+}
+#carrito{
+    width: 30px;
+    align-items: center;
+    padding-left: 30px;
+
 }
 
 /* ESTILOS ¿Cómo funciona?  */
 
-/* ESTILOS ?Cómo funciona?  */
+h2{
+    display: grid;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5d6e7f ;
+}
+.container_Funciona{
+    padding-top: 50px;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.funciona1 .funciona2 .funciona3{
+    flex-wrap: wrap;
+    display: flex;
+    width: 200px;
+    height: 100px;
+}
+.funciona1{
+    border: 1px solid rgb(49 188 193);
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10%;
+    align-content: stretch;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.funciona2{
+    border: 1px solid rgb(49 188 193);
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10%;
+    align-content: stretch;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.funciona3{
+    border: 1px solid rgb(49, 188, 193);
+    height: 150px;
+    width: 600px;
+    display: inline-flex;
+    place-content: center;
+    border-radius: 10%;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
 
-/* ESTILOS ?Cómo funciona?  */
+/* ESTILOS ¿En qué te podemos ayudar?  */
 
+.table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.table1{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    height: 600px;
+    padding: 40px;
+    background: linear-gradient(90deg, #4bb1e4, #2ebdbc);
+} 
+
+.table2{
+    width: 370px;
+    padding: 60px 40px;
+    background: linear-gradient(90deg, #4bb1e4, #2ebdbc);
+}
+
+
+.título_ayudar{
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.proveedor {
+    font-weight: 200px;
+    font-size: 2rem;
+    font-style: bold;
+    color: #5d6e7f ;
+    text-decoration: underline;
+}
+
+.ayudar__items{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+
+.price__cta{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    font-size: 1.2rem;
+    color:#FFF;
+}
+.price__cta2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    font-size: 1.2rem;
+    color:#FFF;
+}
+
+
+/* Footer */
+
+.pie-pagina {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    background: linear-gradient(90deg, #4bb1e4, #2ebdbc);
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;margin: auto;
+    display:grid;
+    grid-template-columns: repeat (3, 1fr);
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: left;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.logocvfotter{
+    align-items: left;
+}
+.texto {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .box1  h2{
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box2  h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box1 .box2 p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display:inline-block;
+    align-items: center;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color:#fff;
+    margin-right: 10px;
+}
+.pie-pagina .grupo-2{
+    background-color: #5d6e7f;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}

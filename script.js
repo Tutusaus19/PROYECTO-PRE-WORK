@@ -19,6 +19,3 @@ update = function () {
 }
 ; requestAnimationFrame(update);;
 
-
-// MI JS 
-
