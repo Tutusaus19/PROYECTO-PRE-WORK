@@ -36,6 +36,7 @@
                     </div>
                     <div id="carrito">
                         <img src="carrito-de-compras.png" alt="">
+                        <p>Carrito: <input id="contador" value="0"/></p>
                     </div>
                 </div>
                 <div class="boton">
@@ -68,46 +69,51 @@
                     <br><div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;;"></path></svg></div>
 <br>
 
-        <section class="container">
+        <section id="items" class="container">
             <h2 id="Ayudar" class="subtitle">¿En qué te podemos ayudar?</h2>
 
             <div class="table">
 
                 <div class="table1">
-                    <h3 class="título_ayudar">¿Qué software elegir a la hora de implementar un CRM en mi empresa?</h3>
+                    <h3 class="título_ayudar">¿Qué CRM implementar en mi empresa?</h3>
                     <h4 class="proveedor">Sagitaz</h4>
+                    <p>Sagitaz es una empresa experta en implantación de CRMs</p>
 
-                    <div class="ayudar_items">
-                        <p>Sagitaz es una empresa experta en implantación de CRMs</p>
+                    <div class="price__items">
+                        <p>40€/h</p>
 
                     </div>
 
-                    <a href="#" class="price__cta">Agendar Llamada <br> 40 €/h</a>
+                    <item><a  href="#" class="price__cta addToCart">Agendar Llamada <br> 40 €/h</a></item>
                 </div>
 
 
                 <div class="table1 table2">
                     <h3 class="título_ayudar">¿Wordpress, Shopify o Prestashop?</h3>
                     <h4 class="proveedor">Ray Villalobos</h4>
-
-                    <div class="ayudar_items">
-                        <p>Programador con más de 15 años de experiencia. Experto en JS y React.  </p>
+                    <p>Programador con más de 15 años de experiencia. Experto en JS y React.  </p>
+<br>
+                    <div class="price__items">
+                        60€/h
                     </div>
-
-                    <a href="#" class="price__cta2">Agendar Llamada <br> 60€/h </a>
+<br>
+<br>
+                    <button class="price__cta2 addToCart">Agendar Llamada <br> 60€/h </button>
                 </div>
 
 
                 <div class="table1">
                     <h3 class="título_ayudar"> ¿Cómo puedo enfocar mi Plan de Marketing para el próximo año?</h3>
                     <h4 class="proveedor">Francisco Ortega</h4>
+                    <p>Director Marketing con más de 30 años de experiencia</p>
 
                     <div class="price__items">
-                        <p>Director Marketing con más de 30 años de experiencia</p>
+                     <p>100€/h</p>
+
                     </div>
 
-                    <a href="#" class="price__cta">Agendar Llamada <br> 100€/h 
-                    </a>
+                    <item><a href="#" class="price__cta addToCart">Agendar Llamada <br> 100€/h 
+                    </a></item>
                 </div>
             </div>
 <br>
@@ -144,9 +150,11 @@
             <small> &copy; 2022 <b>Connecting Visions</b>- Todos los derechos reservados</small>
         </div>
     </footer>
-  
+
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="script.js"></script>
+        <script src="pedidos.js"></script>
+
     </body>
 
 </html>
